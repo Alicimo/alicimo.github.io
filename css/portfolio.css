@@ -1,0 +1,144 @@
+/* Global Styles */
+
+html{
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+body{
+    padding-top: 51px;
+    min-width: 750px;
+}
+
+@media (max-width:991.98px) {
+   .nav>li>a {
+      padding: 15px 5px;
+   }
+}
+
+@media (max-width:767px){
+   .nav>li{
+       text-align:center;
+   }
+}
+
+/* Full Page Image Header Area */
+
+.header-bg{
+    padding-top:20%;
+    padding-bottom:70%;
+    background-color:white;
+    max-height: 750px;
+    background-image: url(../img/splash.jpg);
+    background-repeat: no-repeat;
+    background-position: top center ;
+    background-attachment: fixed;
+}
+
+.transparent-bg{
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width:700px;
+    padding: 2px 15px;
+}
+
+.content{
+    padding: 5%;
+}
+
+.content-bg1{
+    height: 600px;
+    background-image: url(../img/about.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    background-size: auto 600px;
+    -webkit-background-size: auto 600px;
+}
+
+.content-bg2{
+    height: 600px;
+    background-image: url(../img/conference.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    background-size: auto 600px;
+    -webkit-background-size: auto 600px;
+}
+
+.content-bg3{
+    height: 600px;
+    background-image: url(../img/interests.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    background-size: auto 600px;
+}
+
+.content-bg4{
+    height: 600px;
+    background-image: url(../img/formal.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    background-size: auto 600px;
+}
+
+.content-bg5{
+    height: 600px;
+    background-image: url(../img/research.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    background-size: auto 600px;
+}
+.content-bg6{
+    height: 600px;
+    background-image: url(../img/oxford.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    background-size: auto 600px;
+}
+.content-bg7{
+    height: 600px;
+    background-image: url(../img/publication.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    background-size: auto 600px;
+}
+.content-bg8{
+    height: 600px;
+    background-image: url(../img/rowing.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    background-size: auto 600px;
+}
+.media-left{
+    vertical-align:middle;
+}
+.media-body{
+    vertical-align:middle;
+}
+.media-body p{
+    margin-bottom: 0px;
+}
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 24px;
+  line-height: 1.42;
+  border-radius: 25px;
+}
+#toTop {
+    text-align:center; 
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    display:none;
+    background-color:#BF4D28;
+}
+#toTop:hover {
+    background-color:orange;
