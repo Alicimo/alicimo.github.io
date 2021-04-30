@@ -31,7 +31,7 @@ body{
     max-height: 750px;
     background-image: url(../img/splash.jpg);
     background-repeat: no-repeat;
-    background-position: top center ;
+    background-position: top center;
     background-attachment: fixed;
 }
 
@@ -115,6 +115,16 @@ body{
     background-attachment: fixed;
     background-size: auto 600px;
 }
+
+.content-bg8-end{
+    height: 400px;
+    background-image: url(../img/rowing.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    background-size: auto 600px;
+}
+
 .media-left{
     vertical-align:middle;
 }
