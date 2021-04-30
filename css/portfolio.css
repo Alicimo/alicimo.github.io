@@ -21,6 +21,7 @@ body{
    }
 }
 
+
 /* Full Page Image Header Area */
 
 .header-bg{
@@ -142,3 +143,4 @@ body{
 }
 #toTop:hover {
     background-color:orange;
+}
