@@ -57,12 +57,6 @@ body{
     -webkit-background-size: auto 600px;
 }
 
-@supports (-webkit-touch-callout: inherit) {
-  .content-bg {
-  background-attachment: scroll;
-  }
-}
-
 .content-bg.content-bg-1{
     background-image: url(../img/about.jpg);
 }
@@ -86,6 +80,15 @@ body{
 .content-bg.content-bg8-end{
     height: 400px;
     background-image: url(../img/rowing.jpg);
+}
+
+@supports (-webkit-touch-callout: inherit) {
+  .content-bg {
+    background-attachment: scroll;
+  }
+  .content-bg.content-bg8-end{
+    visibility: hidden;
+  }
 }
 
 .media-left{
