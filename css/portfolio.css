@@ -45,84 +45,47 @@ body{
     padding: 5%;
 }
 
-.content-bg1{
+.content-bg{
     height: 600px;
     background-image: url(../img/about.jpg);
     background-repeat: no-repeat;
-    background-position: center ;
+    background-position: center;
     background-attachment: fixed;
     background-size: auto 600px;
+    -o-background-size: auto 600px;
+    -moz-background-size: auto 600px;
     -webkit-background-size: auto 600px;
 }
 
-.content-bg2{
-    height: 600px;
-    background-image: url(../img/conference.jpg);
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-attachment: fixed;
-    background-size: auto 600px;
-    -webkit-background-size: auto 600px;
+@supports (-webkit-touch-callout: inherit) {
+  .content-bg {
+  background-attachment: scroll;
+  }
 }
 
-.content-bg3{
-    height: 600px;
+.content-bg.content-bg-1{
+    background-image: url(../img/about.jpg);
+}
+
+.content-bg.content-bg3{
     background-image: url(../img/interests.jpg);
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-attachment: fixed;
-    background-size: auto 600px;
 }
 
-.content-bg4{
-    height: 600px;
-    background-image: url(../img/formal.jpg);
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-attachment: fixed;
-    background-size: auto 600px;
-}
-
-.content-bg5{
-    height: 600px;
-    background-image: url(../img/research.jpg);
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-attachment: fixed;
-    background-size: auto 600px;
-}
-.content-bg6{
-    height: 600px;
+.content-bg.content-bg6{
     background-image: url(../img/oxford.jpg);
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-attachment: fixed;
-    background-size: auto 600px;
-}
-.content-bg7{
-    height: 600px;
-    background-image: url(../img/publication.jpg);
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-attachment: fixed;
-    background-size: auto 600px;
-}
-.content-bg8{
-    height: 600px;
-    background-image: url(../img/rowing.jpg);
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-attachment: fixed;
-    background-size: auto 600px;
 }
 
-.content-bg8-end{
+.content-bg.content-bg7{
+    background-image: url(../img/publication.jpg);
+}
+
+.content-bg.content-bg8{
+    background-image: url(../img/rowing.jpg);
+}
+
+.content-bg.content-bg8-end{
     height: 400px;
     background-image: url(../img/rowing.jpg);
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-attachment: fixed;
-    background-size: auto 600px;
 }
 
 .media-left{
