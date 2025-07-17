@@ -6,7 +6,6 @@ html{
 
 body{
     padding-top: 56px;
-    min-width: 750px;
 }
 
 @media (max-width:991.98px) {
