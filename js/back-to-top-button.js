@@ -1,5 +1,5 @@
 $( document ).ready(function(){
-      $('body').append('<div id="toTop" class="btn btn-default btn-circle"><span class="glyphicon glyphicon-triangle-top"></span></div>');
+      $('body').append('<div id="toTop" class="btn btn-outline-primary btn-circle"><i class="fa-solid fa-chevron-up"></i></div>');
         $(window).scroll(function (){
             if ($(this).scrollTop() > 100 && $(this).width() < 768 ) {
                 $('#toTop').fadeIn();
