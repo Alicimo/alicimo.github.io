@@ -21,12 +21,15 @@ body{
    }
 }
 
-/* Navbar active state with background highlight */
+/* Navbar active state with full-height background highlight */
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-link.active {
     background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
     color: inherit;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    padding-top: calc(0.5rem + 8px);
+    padding-bottom: calc(0.5rem + 8px);
 }
 
 .navbar-nav .nav-item.active .nav-link:hover,
