@@ -194,6 +194,11 @@ body{
 .media-heading {
     font-size: 18px;
 }
+
+/* Contact section - align text to middle of icons */
+#contact .media {
+    align-items: center;
+}
 .btn-circle {
   width: 50px;
   height: 50px;
