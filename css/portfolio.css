@@ -164,12 +164,27 @@ body{
   }
 }
 
+/* Bootstrap 5 media object to match Bootstrap 3 behavior */
+.media {
+    display: flex;
+    align-items: flex-start;
+}
+
 .media-left{
-    vertical-align:middle;
+    margin-right: 15px;
+    flex-shrink: 0;
 }
+
+.media-object {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
 .media-body{
-    vertical-align:middle;
+    flex: 1;
 }
+
 .media-body p{
     margin-bottom: 0px;
 }
