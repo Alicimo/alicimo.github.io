@@ -21,6 +21,20 @@ body{
    }
 }
 
+/* Navbar active state with background highlight */
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-link.active {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    color: inherit;
+}
+
+.navbar-nav .nav-item.active .nav-link:hover,
+.navbar-nav .nav-link.active:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+    color: inherit;
+}
+
 /* Bootstrap 5 btn-default to match Bootstrap 3 appearance */
 .btn-default {
     color: #333;
