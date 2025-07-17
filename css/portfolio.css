@@ -176,8 +176,8 @@ body{
 }
 
 .media-object {
-    width: 64px;
-    height: 64px;
+    width: 75px;
+    height: 75px;
     object-fit: contain;
 }
 
