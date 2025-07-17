@@ -1,6 +1,6 @@
-# Alistair Martin - Personal Portfolio
+# Alistair Tiefenbacher - Personal Portfolio
 
-Personal portfolio website for Alistair Martin, Senior Data Scientist at Symptoma.
+Personal portfolio website for Alistair Tiefenbacher, Senior Data Scientist at Xund.
 
 ## Live Site
 
