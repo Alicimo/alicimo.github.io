@@ -5,7 +5,58 @@ html{
 }
 
 body{
-    padding-top: 56px;
+    padding-top: 51px;
+}
+
+/* Bootstrap 5 navbar styled to match Bootstrap 3 appearance */
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    min-height: 50px;
+}
+
+.navbar-default .navbar-brand {
+    color: #777;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 15px 15px;
+    height: 50px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5e5e5e;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+.navbar-default .navbar-toggler {
+    border-color: #ddd;
+}
+
+.navbar-default .navbar-toggler:hover,
+.navbar-default .navbar-toggler:focus {
+    background-color: #ddd;
 }
 
 @media (max-width:991.98px) {
@@ -18,6 +69,60 @@ body{
    .nav-item{
        text-align:center;
    }
+}
+
+/* Bootstrap 5 btn-default to match Bootstrap 3 appearance */
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    text-decoration: none;
+}
+
+.btn-default.btn-lg {
+    padding: 14px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+
+/* Bootstrap 5 jumbotron to match Bootstrap 3 appearance */
+.jumbotron {
+    padding: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee;
+    border-radius: 6px;
+}
+
+/* Bootstrap 5 doesn't have text-justify by default */
+.text-justify {
+    text-align: justify;
 }
 
 
@@ -46,6 +151,7 @@ body{
 
 .content-bg{
     height: 600px;
+    background-image: url(../img/about.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -56,8 +162,29 @@ body{
     transition: opacity 0.3s ease;
 }
 
+.content-bg.content-bg1{
+    background-image: url(../img/about.jpg);
+}
+
+.content-bg.content-bg3{
+    background-image: url(../img/interests.jpg);
+}
+
+.content-bg.content-bg6{
+    background-image: url(../img/oxford.jpg);
+}
+
+.content-bg.content-bg7{
+    background-image: url(../img/publication.jpg);
+}
+
+.content-bg.content-bg8{
+    background-image: url(../img/rowing.jpg);
+}
+
 .content-bg.content-bg8-end{
     height: 400px;
+    background-image: url(../img/rowing.jpg);
 }
 
 @supports (-webkit-touch-callout: inherit) {
