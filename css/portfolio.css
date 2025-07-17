@@ -46,7 +46,6 @@ body{
 
 .content-bg{
     height: 600px;
-    background-image: url(../img/about.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -54,31 +53,11 @@ body{
     -o-background-size: auto 600px;
     -moz-background-size: auto 600px;
     -webkit-background-size: auto 600px;
-}
-
-.content-bg.content-bg1{
-    background-image: url(../img/about.jpg);
-}
-
-.content-bg.content-bg3{
-    background-image: url(../img/interests.jpg);
-}
-
-.content-bg.content-bg6{
-    background-image: url(../img/oxford.jpg);
-}
-
-.content-bg.content-bg7{
-    background-image: url(../img/publication.jpg);
-}
-
-.content-bg.content-bg8{
-    background-image: url(../img/rowing.jpg);
+    transition: opacity 0.3s ease;
 }
 
 .content-bg.content-bg8-end{
     height: 400px;
-    background-image: url(../img/rowing.jpg);
 }
 
 @supports (-webkit-touch-callout: inherit) {
