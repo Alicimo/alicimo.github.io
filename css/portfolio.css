@@ -19,6 +19,15 @@ body{
    .nav-item{
        text-align:center;
    }
+   
+   .nav-link {
+       padding: 12px 8px;
+       font-size: 1.1rem;
+   }
+   
+   .navbar-brand {
+       font-size: 1.2rem;
+   }
 }
 
 /* Navbar active state with full-height background highlight */
@@ -92,6 +101,47 @@ body{
     text-align: justify;
 }
 
+/* Mobile typography improvements */
+@media (max-width: 768px) {
+    .text-justify {
+        text-align: left;
+    }
+    
+    h1, h2 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+    
+    h3, h4 {
+        font-size: 1.4rem;
+        line-height: 1.3;
+        margin-bottom: 0.8rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+    
+    .transparent-bg h2 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+    
+    .transparent-bg .lead {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+}
+
 
 /* Full Page Image Header Area */
 
@@ -113,8 +163,37 @@ body{
     margin-left: 10%;
 }
 
+/* Mobile-specific header optimizations */
+@media (max-width: 768px) {
+    .header-bg {
+        padding-top: 15%;
+        padding-bottom: 25%;
+        max-height: 400px;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    
+    .transparent-bg {
+        margin-left: 5%;
+        margin-right: 5%;
+        max-width: 90%;
+        padding: 10px 15px;
+    }
+    
+    .header-bg .btn {
+        margin-top: 10px;
+    }
+}
+
 .content{
     padding: 5%;
+}
+
+/* Mobile-specific content spacing */
+@media (max-width: 768px) {
+    .content {
+        padding: 3% 4%;
+    }
 }
 
 .content-bg{
@@ -128,6 +207,43 @@ body{
     -moz-background-size: auto 600px;
     -webkit-background-size: auto 600px;
     transition: opacity 0.3s ease;
+}
+
+/* Mobile-specific background optimizations */
+@media (max-width: 768px) {
+    .content-bg {
+        height: 300px;
+        background-attachment: scroll;
+        background-size: cover;
+        transition: transform 0.1s ease-out, opacity 0.3s ease;
+        will-change: transform, opacity;
+    }
+    
+    .content-bg.content-bg8-end {
+        height: 200px;
+    }
+    
+    /* Enhanced mobile parallax effect */
+    .content-bg {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    /* Smooth transitions for background changes */
+    .content-bg::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.1s ease-out;
+        will-change: transform;
+    }
 }
 
 .content-bg.content-bg1{
@@ -155,6 +271,24 @@ body{
     background-image: url(../img/rowing.jpg);
 }
 
+/* Mobile spacing and layout improvements */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    
+    .col-md-8.offset-md-2, .col-md-10.offset-md-1 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 @supports (-webkit-touch-callout: inherit) {
   .content-bg {
     background-attachment: scroll;
@@ -180,6 +314,27 @@ body{
     width: 75px;
     height: 75px;
     object-fit: contain;
+}
+
+/* Mobile media object improvements */
+@media (max-width: 768px) {
+    .media {
+        margin-bottom: 20px;
+    }
+    
+    .media-object {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .media-left {
+        margin-right: 12px;
+    }
+    
+    .media-heading {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
 }
 
 .media-body{
@@ -229,4 +384,98 @@ body{
     background-color:orange;
     border-color:orange;
     color: white;
+}
+
+/* Mobile touch-friendly improvements */
+@media (max-width: 768px) {
+    .btn {
+        min-height: 44px;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+    
+    .btn-lg {
+        min-height: 50px;
+        padding: 15px 24px;
+        font-size: 1.1rem;
+    }
+    
+    .navbar-toggler {
+        padding: 8px 12px;
+        font-size: 1.25rem;
+    }
+    
+    /* Ensure contact links are touch-friendly */
+    #contact .media-left a {
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    
+    /* Improve back-to-top button for mobile */
+    #toTop {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.2rem;
+    }
+    
+    /* Add spacing between clickable elements */
+    .nav-link, .btn, a {
+        margin: 2px 0;
+    }
+}
+
+/* Extra small screens (phones, less than 480px) */
+@media (max-width: 480px) {
+    .header-bg {
+        padding-top: 10%;
+        padding-bottom: 20%;
+        max-height: 350px;
+    }
+    
+    .transparent-bg {
+        margin-left: 3%;
+        margin-right: 3%;
+        max-width: 94%;
+        padding: 8px 12px;
+    }
+    
+    .transparent-bg h2 {
+        font-size: 1.3rem;
+    }
+    
+    .content {
+        padding: 2% 3%;
+    }
+    
+    .content-bg {
+        height: 250px;
+    }
+    
+    .media-object {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .media-left {
+        margin-right: 10px;
+    }
+    
+    h1, h2 {
+        font-size: 1.6rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
 }
