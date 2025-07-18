@@ -6,6 +6,7 @@ html{
 
 body{
     padding-top: 56px;
+    min-width: 481px;
 }
 
 
@@ -220,7 +221,7 @@ body{
     }
     
     .content-bg.content-bg8-end {
-        height: 200px;
+        display: none;
     }
     
     /* Enhanced mobile parallax effect */
@@ -431,30 +432,49 @@ body{
 }
 
 /* Extra small screens (phones, less than 480px) */
+/* Note: Due to min-width: 481px on body, this breakpoint prevents problematic scaling */
 @media (max-width: 480px) {
+    /* Prevent jumbotron text and button changes - keep them at 768px mobile size */
     .header-bg {
-        padding-top: 10%;
-        padding-bottom: 20%;
-        max-height: 350px;
+        padding-top: 15% !important;
+        padding-bottom: 30% !important;
+        max-height: 450px !important;
     }
     
     .transparent-bg {
-        margin-left: 3%;
-        margin-right: 3%;
-        max-width: 94%;
-        padding: 8px 12px;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+        max-width: 90% !important;
+        padding: 10px 15px !important;
     }
     
     .transparent-bg h2 {
-        font-size: 1.3rem;
+        font-size: 1.5rem !important;
     }
     
+    .transparent-bg .lead {
+        font-size: 1rem !important;
+    }
+    
+    /* Fix button positioning to prevent leaking past background */
+    .header-btn-container {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+        padding-top: 5px !important;
+        padding-bottom: 15px !important;
+    }
+    
+    /* Keep other elements at mobile sizes but not extra-small */
     .content {
-        padding: 2% 3%;
+        padding: 3% 4% !important;
+        margin-bottom: 20px !important;
     }
     
     .content-bg {
         height: 250px;
+        margin-top: 20px !important;
+        transform: none !important;
+        opacity: 1 !important;
     }
     
     .media-object {
