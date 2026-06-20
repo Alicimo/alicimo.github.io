@@ -350,6 +350,22 @@ body{
   }
 }
 
+.safari-no-parallax .header-bg,
+.safari-no-parallax .content-bg {
+    background-attachment: scroll;
+}
+
+.safari-no-parallax.mobile-parallax .header-bg,
+.safari-no-parallax.mobile-parallax .content-bg {
+    background-image: var(--parallax-image) !important;
+    background-color: inherit !important;
+}
+
+.safari-no-parallax.mobile-parallax .header-bg::before,
+.safari-no-parallax.mobile-parallax .content-bg::before {
+    display: none;
+}
+
 /* Bootstrap 5 media object to match Bootstrap 3 behavior */
 .media {
     display: flex;

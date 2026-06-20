@@ -1,3 +1,16 @@
+var isSafari = (function() {
+    var userAgent = window.navigator.userAgent;
+    var vendor = window.navigator.vendor || '';
+
+    return /Safari/.test(userAgent) &&
+        /Apple Computer/.test(vendor) &&
+        !/(Chrome|Chromium|CriOS|FxiOS|EdgiOS|OPR|OPiOS|Android)/.test(userAgent);
+})();
+
+if (isSafari) {
+    document.documentElement.classList.add('safari-no-parallax');
+}
+
 $(document).ready(function() {
     var mobileQuery = window.matchMedia('(max-width: 768px)');
     var reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -6,7 +19,7 @@ $(document).ready(function() {
     var parallaxWindows = [];
 
     function shouldEnableParallax() {
-        return mobileQuery.matches && !reducedMotionQuery.matches;
+        return !isSafari && mobileQuery.matches && !reducedMotionQuery.matches;
     }
 
     function updateParallax() {
