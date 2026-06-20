@@ -18,13 +18,15 @@ $(document).ready(function() {
                 const bgImage = element.dataset.bg;
                 
                 if (bgImage) {
+                    const resolvedBgImage = new URL(bgImage, window.location.href).href;
                     // Create a new image to preload
                     const img = new Image();
                     img.onload = function() {
-                        element.style.backgroundImage = `url(${bgImage})`;
+                        element.style.backgroundImage = `url(${resolvedBgImage})`;
+                        element.style.setProperty('--parallax-image', `url(${resolvedBgImage})`);
                         element.classList.add('loaded');
                     };
-                    img.src = bgImage;
+                    img.src = resolvedBgImage;
                     
                     // Stop observing this element
                     observer.unobserve(element);
@@ -40,7 +42,9 @@ $(document).ready(function() {
     lazyBackgrounds.forEach(bg => {
         const element = document.querySelector(bg.element);
         if (element) {
+            const resolvedBgImage = new URL(bg.image, window.location.href).href;
             element.dataset.bg = bg.image;
+            element.style.setProperty('--parallax-image', `url(${resolvedBgImage})`);
             imageObserver.observe(element);
         }
     });
@@ -50,7 +54,9 @@ $(document).ready(function() {
         lazyBackgrounds.forEach(bg => {
             const element = document.querySelector(bg.element);
             if (element) {
-                element.style.backgroundImage = `url(${bg.image})`;
+                const resolvedBgImage = new URL(bg.image, window.location.href).href;
+                element.style.backgroundImage = `url(${resolvedBgImage})`;
+                element.style.setProperty('--parallax-image', `url(${resolvedBgImage})`);
             }
         });
     }
