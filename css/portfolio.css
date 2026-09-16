@@ -151,13 +151,11 @@ body{
     padding-bottom:70%;
     background-color:white;
     max-height: 750px;
-    --parallax-image: url(../img/splash.jpg);
-    --parallax-position: top center;
-    --parallax-size: auto 100vh;
-    background-image: url(../img/splash.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-attachment: fixed;
+}
+
+.header-bg > .jarallax-img {
+    object-fit: none;
+    object-position: top center;
 }
 
 .transparent-bg{
@@ -174,13 +172,12 @@ body{
         padding-bottom: 25%;
         min-height: 400px;
         max-height: none;
-        background-attachment: scroll;
-        background-size: cover;
         position: relative;
         overflow: hidden;
     }
 
-    .header-bg > * {
+    .header-bg > .transparent-bg,
+    .header-bg > .header-btn-container {
         position: relative;
         z-index: 1;
     }
@@ -209,118 +206,29 @@ body{
     .content {
         padding: 3% 4%;
     }
-
-    .mobile-parallax .content {
-        box-shadow: 0 0 0 100vmax white;
-        clip-path: inset(0 -100vmax);
-    }
 }
 
 .content-bg{
     height: 600px;
-    --parallax-offset: 0px;
-    --parallax-image: url(../img/about.jpg);
-    --parallax-position: center;
-    --parallax-size: auto 80vh;
-    background-image: url(../img/about.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: auto 600px;
-    -o-background-size: auto 600px;
-    -moz-background-size: auto 600px;
-    -webkit-background-size: auto 600px;
-    transition: opacity 0.3s ease;
+}
+
+.content-bg > .jarallax-img {
+    object-fit: none;
 }
 
 /* Mobile-specific background optimizations */
 @media (max-width: 768px) {
     .content-bg {
         height: 300px;
-        background-attachment: scroll;
-        background-size: cover;
-        transition: transform 0.1s ease-out, opacity 0.3s ease;
-        will-change: transform, opacity;
     }
     
     .content-bg.content-bg8-end {
         display: none;
     }
-    
-    /* Enhanced mobile parallax effect */
-    .content-bg {
-        position: relative;
-        overflow: hidden;
-        z-index: 0;
-    }
-
-    .mobile-parallax .header-bg,
-    .mobile-parallax .content-bg {
-        background-color: transparent !important;
-        background-image: none !important;
-        isolation: isolate;
-    }
-
-    .mobile-parallax .header-bg::before,
-    .mobile-parallax .content-bg::before {
-        content: '';
-        position: absolute;
-        top: var(--mobile-parallax-layer-top, 0);
-        left: 50%;
-        width: 100vw;
-        height: var(--mobile-parallax-viewport-height, 100vh);
-        background-image: var(--parallax-image);
-        background-repeat: no-repeat;
-        background-size: var(--parallax-size);
-        background-position: var(--parallax-position);
-        pointer-events: none;
-        transform: translate3d(-50%, 0, 0);
-        z-index: 0;
-    }
-}
-
-.content-bg.content-bg1{
-    --parallax-image: url(../img/about.jpg);
-    background-image: url(../img/about.jpg);
-}
-
-.content-bg.content-bg3{
-    --parallax-image: url(../img/interests.jpg);
-    background-image: url(../img/interests.jpg);
-}
-
-.content-bg.content-bg6{
-    --parallax-image: url(../img/oxford.jpg);
-    background-image: url(../img/oxford.jpg);
-}
-
-.content-bg.content-bg7{
-    --parallax-image: url(../img/publication.jpg);
-    background-image: url(../img/publication.jpg);
-}
-
-.content-bg.content-bg8{
-    --parallax-image: url(../img/rowing.jpg);
-    background-image: url(../img/rowing.jpg);
 }
 
 .content-bg.content-bg8-end{
     height: 400px;
-    --parallax-image: url(../img/rowing.jpg);
-    background-image: url(../img/rowing.jpg);
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .mobile-parallax .header-bg,
-    .mobile-parallax .content-bg {
-        background-image: var(--parallax-image) !important;
-        background-color: transparent !important;
-    }
-
-    .mobile-parallax .header-bg::before,
-    .mobile-parallax .content-bg::before {
-        display: none;
-    }
 }
 
 /* Mobile spacing and layout improvements */
@@ -339,31 +247,6 @@ body{
         padding-left: 10px;
         padding-right: 10px;
     }
-}
-
-@supports (-webkit-touch-callout: inherit) {
-  .content-bg {
-    background-attachment: scroll;
-  }
-  .content-bg.content-bg8-end{
-    visibility: hidden;
-  }
-}
-
-.safari-no-parallax .header-bg,
-.safari-no-parallax .content-bg {
-    background-attachment: scroll;
-}
-
-.safari-no-parallax.mobile-parallax .header-bg,
-.safari-no-parallax.mobile-parallax .content-bg {
-    background-image: var(--parallax-image) !important;
-    background-color: inherit !important;
-}
-
-.safari-no-parallax.mobile-parallax .header-bg::before,
-.safari-no-parallax.mobile-parallax .content-bg::before {
-    display: none;
 }
 
 /* Bootstrap 5 media object to match Bootstrap 3 behavior */

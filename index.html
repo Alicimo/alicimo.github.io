@@ -27,6 +27,7 @@
     <link rel="icon" type="image/jpg" href="img/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/jarallax@3.1.0/dist/jarallax.min.css" rel="stylesheet" integrity="sha384-BFjKKLXrD60QwHLD8a38+eu/56/eGJ1YIQ8aD4AmGo4PBpcuNtor5sviZUHEHjlA" crossorigin="anonymous">
     <link href="./css/portfolio.css" rel="stylesheet">
 </head>
 
@@ -68,7 +69,8 @@
 <main class="container" id="content">
 
     <!-- Full Size Image Header -->
-    <div class="jumbotron header-bg">
+    <div class="jumbotron header-bg jarallax" data-jarallax data-speed="0" data-img-size="none" data-img-position="top center">
+        <img class="jarallax-img" src="./img/splash.jpg" alt="">
         <!--Image by David Goodsell-->
         <div class="transparent-bg">
             <h2>Hi, I'm <strong>Dr. Alistair Tiefenbacher</strong>, a Data Scientist, Bioinformatician & Statistician living in Austria</h2>
@@ -87,7 +89,8 @@
     </section>
 
 
-    <div class="content-bg content-bg1">
+    <div class="content-bg jarallax" data-jarallax data-speed="0" data-img-size="none">
+        <img class="jarallax-img" src="./img/about.jpg" alt="" loading="lazy">
     </div>
 
     <section class="content text-justify" id="research">
@@ -100,7 +103,8 @@
         </p>
     </section>
 
-    <div class="content-bg content-bg6">
+    <div class="content-bg jarallax" data-jarallax data-speed="0" data-img-size="none">
+        <img class="jarallax-img" src="./img/oxford.jpg" alt="" loading="lazy">
     </div>
 
     <div class="content text-center row" id="education">
@@ -136,7 +140,8 @@
         </div>
     </div>
 
-    <div class="content-bg content-bg3">
+    <div class="content-bg jarallax" data-jarallax data-speed="0" data-img-size="none">
+        <img class="jarallax-img" src="./img/interests.jpg" alt="" loading="lazy">
     </div>
 
     <div class="content text-center row" id="experience">
@@ -253,7 +258,8 @@
         </div>
     </div>
 
-    <div class="content-bg content-bg7">
+    <div class="content-bg jarallax" data-jarallax data-speed="0" data-img-size="none">
+        <img class="jarallax-img" src="./img/publication.jpg" alt="" loading="lazy">
     </div>
 
     <div class="content row text-justify" id="publications">
@@ -332,7 +338,8 @@
         </div>
     </div>
 
-    <div class="content-bg content-bg8">
+    <div class="content-bg jarallax" data-jarallax data-speed="0" data-img-size="none">
+        <img class="jarallax-img" src="./img/rowing.jpg" alt="" loading="lazy">
     </div>
 
     <div class="content row text-justify" id="contact">
@@ -372,17 +379,17 @@
         </div>
     </div>
 
-    <div class="content-bg content-bg8-end">
+    <div class="content-bg content-bg8-end jarallax" data-jarallax data-speed="0" data-img-size="none">
+        <img class="jarallax-img" src="./img/rowing.jpg" alt="" loading="lazy">
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@3.1.0/dist/jarallax.min.js" integrity="sha384-zzI4u4O2CVJsQPVXDiLQIhIHxHhtQ09obwrBi20AfywjHTeCHBwPh1GromIGJSoJ" crossorigin="anonymous"></script>
     <script src="./js/smoothScroll-center.js"></script>
     <script src="./js/scrollSpy.js"></script>
     <script src="./js/back-to-top-button.js"></script>
     <script src="./js/close-on-click.js"></script>
-    <script src="./js/lazy-loading.js"></script>
-    <script src="./js/parallax.js"></script>
 
 </main>
 </body>
