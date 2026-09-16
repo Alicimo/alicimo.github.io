@@ -4,7 +4,7 @@ Personal portfolio website for Alistair Tiefenbacher, Senior Data Scientist at X
 
 ## Live Site
 
-Visit: [www.alistair-martin.com](https://www.alistair-martin.com)
+Visit: [tiefenbacher.dev](https://tiefenbacher.dev)
 
 ## Development
 
